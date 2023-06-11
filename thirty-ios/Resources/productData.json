@@ -1,0 +1,30 @@
+[
+    {
+        "name": "식품1",
+        "id": 1,
+        "imageName": "ProductIcon",
+        "expiry": "2020-10-10",
+        "purchase_date": "2000-10-10",
+    },
+    {
+        "name": "식품2",
+        "id": 2,
+        "imageName": "ProductIcon",
+        "expiry": "2020-10-10",
+        "purchase_date": "2000-10-10",
+    },
+    {
+        "name": "식품3",
+        "id": 3,
+        "imageName": "ProductIcon",
+        "expiry": "2020-10-10",
+        "purchase_date": "2000-10-10",
+    },
+    {
+        "name": "식품4",
+        "id": 4,
+        "imageName": "ProductIcon",
+        "expiry": "2020-10-10",
+        "purchase_date": "2000-10-10",
+    },
+]

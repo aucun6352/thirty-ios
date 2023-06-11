@@ -1,0 +1,22 @@
+[
+    {
+        "name": "냉장고1",
+        "id": 1,
+        "imageName": "DefaultIcon"
+    },
+    {
+        "name": "냉장고2",
+        "id": 2,
+        "imageName": "DefaultIcon"
+    },
+    {
+        "name": "냉장고3",
+        "id": 3,
+        "imageName": "DefaultIcon"
+    },
+    {
+        "name": "냉장고4",
+        "id": 4,
+        "imageName": "DefaultIcon"
+    },
+]
