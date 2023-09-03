@@ -17,6 +17,7 @@ struct ProductList: View {
     ]
     
     var fridge: Fridge
+    @State private var products: [Product] = []
     @State var showingPopup: Bool = false
     @State var selectProduct: Product? = nil
     
@@ -26,7 +27,7 @@ struct ProductList: View {
         GeometryReader { geometry in
             ScrollView(.vertical) {
                 LazyVGrid(columns: columns) {
-                    ForEach(products) { product in
+                    ForEach(products, id: \.id) { product in
                         ProductItem(product: product)
                             .onTapGesture {
                                 if (!showingPopup) {
@@ -47,6 +48,16 @@ struct ProductList: View {
             set: { _ in })
         ) {
             ProductDetail(product: selectProduct!)
+        }
+        .onAppear {
+            Task {
+                do {
+                    products = try await Product.getList(fridege_id: fridge.id)
+                } catch {
+                    // Handle error if needed
+                    print("Error fetching fridge list: \(error)")
+                }
+            }
         }
         
         

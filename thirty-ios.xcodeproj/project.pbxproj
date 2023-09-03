@@ -24,6 +24,8 @@
 		7C29FBFE2A361E3D00DAE3AE /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29FBFD2A361E3D00DAE3AE /* ProductList.swift */; };
 		7C29FC002A36259700DAE3AE /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29FBFF2A36259700DAE3AE /* ProductDetail.swift */; };
 		7C29FC032A36292B00DAE3AE /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 7C29FC022A36292B00DAE3AE /* PopupView */; };
+		7C4BA5CB2AA4671700F57DAA /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4BA5CA2AA4671700F57DAA /* HTTPManager.swift */; };
+		7C4BA5CE2AA46AD400F57DAA /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4BA5CD2AA46AD400F57DAA /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		7C29FBFB2A361D8B00DAE3AE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		7C29FBFD2A361E3D00DAE3AE /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		7C29FBFF2A36259700DAE3AE /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		7C4BA5CA2AA4671700F57DAA /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		7C4BA5CD2AA46AD400F57DAA /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4BA5CE2AA46AD400F57DAA /* OSLog.framework in Frameworks */,
 				7C29FC032A36292B00DAE3AE /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +103,7 @@
 				7C29FBAE2A35F8F600DAE3AE /* thirty-iosTests */,
 				7C29FBB82A35F8F600DAE3AE /* thirty-iosUITests */,
 				7C29FB9C2A35F8F400DAE3AE /* Products */,
+				7C4BA5CC2AA46AD400F57DAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +120,7 @@
 		7C29FB9D2A35F8F400DAE3AE /* thirty-ios */ = {
 			isa = PBXGroup;
 			children = (
+				7C4BA5C72AA463E800F57DAA /* requests */,
 				7C29FBD42A36034B00DAE3AE /* Resources */,
 				7C29FBD32A3600B300DAE3AE /* Model */,
 				7C29FBCC2A35FE3B00DAE3AE /* Views */,
@@ -170,6 +177,22 @@
 				7C29FBF92A361D1900DAE3AE /* productData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C4BA5C72AA463E800F57DAA /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				7C4BA5CA2AA4671700F57DAA /* HTTPManager.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		7C4BA5CC2AA46AD400F57DAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C4BA5CD2AA46AD400F57DAA /* OSLog.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +284,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 7C29FB922A35F8F400DAE3AE;
 			packageReferences = (
@@ -317,6 +341,7 @@
 				7C29FBF82A361CF700DAE3AE /* ProductItem.swift in Sources */,
 				7C29FC002A36259700DAE3AE /* ProductDetail.swift in Sources */,
 				7C29FBD22A36007900DAE3AE /* ModelData.swift in Sources */,
+				7C4BA5CB2AA4671700F57DAA /* HTTPManager.swift in Sources */,
 				7C29FB9F2A35F8F400DAE3AE /* thirty_iosApp.swift in Sources */,
 				7C29FBF22A3606F300DAE3AE /* FridgeItem.swift in Sources */,
 			);

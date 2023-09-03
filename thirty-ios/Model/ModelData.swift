@@ -10,6 +10,10 @@ import Foundation
 var fridges: [Fridge] = load("fridgeData.json")
 var products: [Product] = load("productData.json")
 
+struct Response<T: Codable>: Codable {
+    var data: [T]
+}
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
